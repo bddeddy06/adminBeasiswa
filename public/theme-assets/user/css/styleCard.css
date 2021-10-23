@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+.kontain{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	flex-wrap: wrap;
+	transform-style: preserve-3d;
+	min-height: 70vh;
+
+}
+
+.kontain .kartu{
+	position: relative;
+	width: 210px;
+	height: 270px;
+	background: #fff;
+	margin: 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+	transition: 0.5s;
+	overflow: hidden;
+	transform-style: preserve-3d;
+}
+
+.kontain .kartu h2{
+	width: 150px;
+	height: 80px;
+	line-height: 80px;
+	background: #2196f3;
+	color: #fff;
+	text-align: center;
+	border-radius: 50%;
+	transition: box-shadow 0.5s;
+}
+
+.kontain .kartu:hover h2{
+	background: #fff;
+	color: #2196f3;
+	box-shadow: 0 0 0 150px #2196f3;
+}
+
+h1{
+	text-align: center;
+	font-size: 48px;
+}
+
+.kontain .kartu a{
+	text-decoration: none;
+}
+
+

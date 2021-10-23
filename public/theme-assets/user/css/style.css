@@ -1,0 +1,275 @@
+/* Navbar */
+
+
+
+.navbar {
+
+    z-index: 2;
+}
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../img/ubg-bg1.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.1));
+    position: absolute;
+    bottom: 0; 
+}
+
+.jumbotron .display-4 {
+    color: white;
+    
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* Info Panel*/
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    background-color: white;
+    margin-top: -100px;
+    padding: 30px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: -5px;
+}
+
+/* Workingspace */
+.workingspace {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.workingspace h3 {
+    font-size: 52px;
+    font-weight: 200;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.workingspace h3 span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 18px;
+    color: #ACACAC;
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+/* Testimonial */
+.testimonial {
+    margin-top: 100px;
+}
+
+.testimonial h5 {
+    font-size: 20px !important;
+    font-weight: 200;
+    text-align: center;
+    font-style: italic;
+}
+
+.testimonial figure img {
+    width: 60px;
+    margin: 30px 10px 10px;
+    opacity: 0.6;
+}
+
+.testimonial figure img.utama {
+    width: 90px;
+    height: 90px;
+    opacity: 1;
+    margin-top: 50px;
+    margin-left: 85px;
+}
+
+.testimonial figure h5 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    color: #1C2C5D;
+}
+
+.testimonial figure p {
+    font-size: 12px;
+    color: #ACACAC;
+    margin-top: -5px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    margin-top: 100px;
+}
+
+.footer p {
+    font-size: 18px;
+    color: #ACACAC;
+}
+
+.footer p strong a {
+    color: #ACACAC;
+}
+
+/* Card */
+
+
+.kontain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    min-height: 70vh;
+
+}
+
+.kontain .kartu{
+    position: relative;
+
+    height: 160px;
+    background: #fff;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    transition: 0.5s;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.kontain .kartu h2{
+    width: 150px;
+    height: 80px;
+    line-height: 80px;
+    background: #2F4F4F;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    transition: box-shadow 0.5s;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.kontain .kartu:hover h2{
+    background: #fff;
+    color: #2F4F4F;
+    box-shadow: 0 0 0 150px #2F4F4F;
+    font-weight: 500;
+}
+
+.beasiswa h1{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    margin-top: 100px;
+    text-transform: uppercase;
+    margin-bottom: -40px;
+    font-family: Viga;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.kontain .kartu a{
+    text-decoration: none;
+}
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px; 
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+
+    .workingspace {
+        text-align: left;
+    }
+
+    .testimonial h5 {
+        font-size: 32px;
+    }
+
+    .kontain .kartu {
+        width: 210px;
+        height: 270px;
+    }
+}
